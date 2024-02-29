@@ -8,8 +8,9 @@ $(document).ready(function(){
                 data: {query: query},
                 success: function(data){
                     $('#search-results').html(data);
-                }
+                }                
             });
+            console.log(query);
         } else {
             $('#search-results').html('');
         }

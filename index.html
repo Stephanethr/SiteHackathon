@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Hackathon</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js" ></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
+    <h2>Veuillez téléverser un fichier CSV contenant la base de données</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="csv_file" accept=".csv">
+        <button class="button" type="submit" name="submit">Envoyer</button>
+    </form>
+    
+    <form>
+        <label for="search">Recherche :</label><br>
+        <input class="input" type="text" id="search" name="search"><br>
+    </form>
 
-
-<form>
-    <label for="search">Recherche :</label><br>
-    <input type="text" id="search" name="search"><br>
-</form>
-
-<div id="search-results"></div>
+    <div id="search-results"></div>
 
 </body>
+
 </html>

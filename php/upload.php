@@ -13,7 +13,7 @@ if (isset($_FILES["csv_file"])) {
     }
 
     // Chemin de sauvegarde du fichier téléversé
-    $targetDir = "uploads/";
+    $targetDir = "../uploads/";
     $targetFile = $targetDir . basename($_FILES["csv_file"]["name"]);
 
     $table = "etudiants";
@@ -43,9 +43,11 @@ if (isset($_FILES["csv_file"])) {
             }
         }
         fclose($handle);
-        header("Location: index.html");
-        exit;
+        echo "Téléversement réussi."; // Réponse au client
+        
     } else {
-        echo "Impossible d'ouvrir le fichier CSV.";
+        echo "Impossible d'ouvrir le fichier CSV."; // Réponse au client
     }
 }
+
+?>

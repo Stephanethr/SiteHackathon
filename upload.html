@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Téléverser un fichier CSV</title>
+    <!-- Inclure jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Inclure ajax.js après jQuery -->
+    <script src="ajax.js" defer></script>
+</head>
+<body>
+    <h2>Veuillez téléverser un fichier CSV contenant la base de données</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="csv_file" name="csv_file" accept=".csv">
+        <button class="button" type="submit" id="submitBtn">Envoyer</button>
+    </form>
+
+    <button id="retourAccueilBtn">Retour à l'accueil</button>
+
+</body>
+</html>

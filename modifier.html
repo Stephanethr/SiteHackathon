@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier Étudiant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="js/modifier.js"></script>
+    <script src="js/Etudiant.js" defer></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Modifier Étudiant</h1>
+            <!-- Formulaire pour modifier les attributs de l'étudiant -->
+            <form id="modificationForm">
+                <!-- Champ pour le nom de l'étudiant -->
+                <div class="field">
+                    <label class="label" for="nom">Nom :</label>
+                    <div class="control">
+                        <input class="input" type="text" id="nom" name="nom" required>
+                    </div>
+                </div>
+
+                <!-- Champ pour le prénom de l'étudiant -->
+                <div class="field">
+                    <label class="label" for="prenom">Prénom :</label>
+                    <div class="control">
+                        <input class="input" type="text" id="prenom" name="prenom" required>
+                    </div>
+                </div>
+
+                <!-- Champ pour la promotion de l'étudiant -->
+                <div class="field">
+                    <label class="label" for="promo">Promotion :</label>
+                    <div class="control">
+                        <input class="input" type="text" id="promo" name="promo" required>
+                    </div>
+                </div>
+
+                <!-- Champ pour les compétences de l'étudiant -->
+                <div class="field">
+                    <label class="label" for="skills">Compétences :</label>
+                    <div class="control">
+                        <input class="input" type="text" id="skills" name="skills">
+                    </div>
+                </div>
+
+                <!-- Bouton de soumission -->
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-primary" type="submit" id="enregistrer">Enregistrer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bouton de retour au menu -->
+    <div class="container">
+        <a href="index.html" class="button is-link" id="retour">Retour au Menu</a>
+    </div>
+</body>
+
+</html>

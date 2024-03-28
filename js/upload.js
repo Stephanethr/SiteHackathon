@@ -10,7 +10,7 @@
         event.preventDefault();
         var formData = new FormData(uploadForm);
         var xhr = new XMLHttpRequest();
-        xhr.open('POST', 'upload.php', true);
+        xhr.open('POST', 'php/upload.php', true);
 
         xhr.onload = function() {
             if (xhr.status === 200) {
@@ -29,10 +29,7 @@
     });
 
     // Gestion de l'événement pour le bouton "Retour à l'accueil"
-    var retourAccueilBtn = document.createElement('button');
-    retourAccueilBtn.textContent = "Retour à l'accueil";
-    retourAccueilBtn.id = 'retourAccueilBtn';
-    document.body.appendChild(retourAccueilBtn);
+    var retourAccueilBtn = document.getElementById('retourAccueilBtn');
 
     retourAccueilBtn.addEventListener('click', function() {
         retourAccueil();

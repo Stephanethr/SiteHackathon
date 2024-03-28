@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des équipes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="js/equipe.js" defer></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Gestion des équipes</h1>
+            <!-- Formulaire pour créer une nouvelle équipe -->
+            <form id="createTeamForm">
+                <div class="field">
+                    <label class="label" for="teamName">Nom de l'équipe :</label>
+                    <div class="control">
+                        <input class="input" type="text" id="teamName" name="teamName" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-primary" type="submit">Créer l'équipe</button>
+                    </div>
+                </div>
+            </form>
+            <!-- Tableau pour afficher les équipes -->
+            <table class="table is-fullwidth">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom</th>
+                        <th>Date de création</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="teamTableBody">
+                    <!-- Les équipes seront affichées ici -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <br>
+    <!-- Bouton pour retourner à index.html -->
+    <div class="container">
+        <a href="index.html" class="button is-link">Retour à l'accueil</a>
+    </div>
+</body>
+
+</html>
